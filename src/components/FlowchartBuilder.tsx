@@ -23,11 +23,11 @@ const FlowchartApp = () => {
   );
 
   useEffect(() => {
-    reactFlow.setViewport({ x: 400, y: 0, zoom: 1 }, { duration: 800 })
+    reactFlow.setViewport({ x: 400, y: 10, zoom: 1 }, { duration: 800 })
   })
  
   return (
-    <div style={{height: "100%", width: "100%"}}>
+    <div className="flowchart-container">
       <ReactFlow
         nodes={nodes}
         edges={edges}

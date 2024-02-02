@@ -1,3 +1,8 @@
+.flowchart-container {
+  height: 100%;
+  width: 100%
+}
+
 .node-container {
   background-color: lightgray;
   border-radius: 5px;

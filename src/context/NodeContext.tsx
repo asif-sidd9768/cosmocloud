@@ -18,7 +18,8 @@ const initialNodes = [
   { id: "1", position: { x: 0, y: 0 }, type:"customNode", data: { label: "Node 1" } },
 ];
 
-const initialEdges = [{ id: "e1-2", source: "1", target: "2" }, { id: "e1-3", source: "2", target: "3" }];
+const initialEdges = [
+  { id: "e1-2", source: "1", target: "2" }];
 
 export const NodeProvider: React.FC<{children: React.ReactNode}> = ({children}) => {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
